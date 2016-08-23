@@ -1,0 +1,24 @@
+﻿Build started 2016/4/28 16:47:02.
+     1>Project "C:\Users\lenovo\Desktop\Project1\TextSearch-Windows\TestTextSearch\TestTextSearch.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt ..\FileMgrCom\FileMgrCom_i.c ..\TextSearchCom\TextSearchCom_i.c
+         TextSearchCom_i.c
+         FileMgrCom_i.c
+         Generating Code...
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Utilities\Utility.cpp stdafx.cpp Test.cpp
+         Test.cpp
+         stdafx.cpp
+         Utility.cpp
+         Generating Code...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lenovo\Desktop\Project1\TextSearch-Windows\Debug\TestTextSearch.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lenovo\Desktop\Project1\TextSearch-Windows\Debug\TestTextSearch.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lenovo\Desktop\Project1\TextSearch-Windows\Debug\TestTextSearch.lib" /MACHINE:X86 Debug\FileMgrCom_i.obj
+         Debug\TextSearchCom_i.obj
+         Debug\Utility.obj
+         Debug\stdafx.obj
+         Debug\Test.obj
+     1>LINK : fatal error LNK1561: entry point must be defined
+     1>Done Building Project "C:\Users\lenovo\Desktop\Project1\TextSearch-Windows\TestTextSearch\TestTextSearch.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:17.16

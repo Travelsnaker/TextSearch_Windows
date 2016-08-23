@@ -1,0 +1,24 @@
+﻿Build started 2016/8/23 15:47:01.
+     1>Project "C:\Users\lenovo\Desktop\TextSearch-Windows\cppClient\cppClient.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D TEST_CPPCLIENT /D _MBCS /GF- /Gm- /EHa /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt ..\FileMgrCom\FileMgrCom_i.c ..\TextSearchCom\TextSearchCom_i.c
+         FileMgrCom_i.c
+         TextSearchCom_i.c
+         Generating Code...
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D TEST_CPPCLIENT /D _MBCS /GF- /Gm- /EHa /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Utilities\Utility.cpp cppClient.cpp stdafx.cpp
+         Utility.cpp
+         cppClient.cpp
+         stdafx.cpp
+         Generating Code...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\cppClient.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\cppClient.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\cppClient.lib" /MACHINE:X86 Debug\FileMgrCom_i.obj
+         Debug\TextSearchCom_i.obj
+         Debug\Utility.obj
+         Debug\cppClient.obj
+         Debug\stdafx.obj
+         cppClient.vcxproj -> C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\cppClient.exe
+     1>Done Building Project "C:\Users\lenovo\Desktop\TextSearch-Windows\cppClient\cppClient.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.12

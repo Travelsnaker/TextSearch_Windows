@@ -1,0 +1,73 @@
+///////////////////////////////////////////////////////////////
+//  TextSearchCom.idl - IDL for component TextSearchCom      //
+//                                                           //
+//  Platform:     Lenovo Y470, Core i3, Windows 7 SP1        //
+//  Application:  Demonstration for CSE775 - Distrib. Objs   //
+//  Authors:      Eddon & Eddon, Inside Distributed COM,     //
+//                Microsoft Press, 1998                      //
+//  Modified:     Wei Sun, Computer Engineering,Syracuse Univ//
+//                wsun13@syr.edu                             //
+///////////////////////////////////////////////////////////////
+/* 
+*  Component Operation :
+*  ======================= 
+*  TextSearchCom.idl : IDL source for TextSearchCom
+*  This file will be processed by the MIDL tool to
+*  produce the type library (TextSearchCom.tlb) and marshalling code.
+*
+*  Public Interface:
+*  =======================
+*  HRESULT enqueue(BSTR filename);  //enqueue the fully specified file name for text search.
+*  HRESULT setupSearch(LONG num,BSTR text);    //Specify the number of threads and target text.
+*  HRESULT startSearch();           //Start asychronously text search.
+*  HRESULT get(BSTR* filename);     //Get the filename of search results.
+*  HRESULT stopSearch();            //Stop asychrously search, terminate each child threads.
+*  getNumRes(LONG* num);
+*
+*  Required Files
+*  ====================
+*  TextSearchCom.idl, Cpp11-BlockingQueue.h, Cpp11-BlockingQueue.cpp, dllmain.h,
+*  dllmain.cpp, FileSystem.h, FileSystem.cpp, Resource.h, stdafx.h, stdafx.cpp,
+*  targetver.h, TextSearch.h, TextSearch.cpp, Utility.h, Utility.cpp, xdlldata.h,
+*  xdlldata.c, TextSearchCom.cpp
+*
+*  Maintenance History:
+*  ===================
+*  Ver 1.0 : 16 Mar 6
+*  - first release
+*/
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(6D7AB63B-53D2-418C-8401-8DCD4606A724),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ITextSearch : IDispatch{
+	[id(1)] HRESULT enqueue(BSTR filename);
+	[id(2)] HRESULT setupSearch(LONG num,BSTR text);
+	[id(3)] HRESULT startSearch();
+	[id(4)] HRESULT get(BSTR* filename);
+	[id(5)] HRESULT stopSearch();
+	[id(6)] HRESULT getNumRes(LONG* num);
+};
+[
+	uuid(D9BFB828-910D-47FA-9679-86118485922A),
+	version(1.0),
+]
+library TextSearchComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(9CCEFC9A-7DDC-4A01-87C3-F12C08FB97A2)		
+	]
+	coclass TextSearch
+	{
+		[default] interface ITextSearch;
+	};
+};
+

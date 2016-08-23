@@ -1,0 +1,72 @@
+﻿Build started 2016/8/23 15:46:27.
+     1>Project "C:\Users\lenovo\Desktop\TextSearch-Windows\TextSearchCom\TextSearchCom.vcxproj" on node 3 (Rebuild target(s)).
+     1>Midl:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\midl.exe /D _DEBUG /W1 /nologo /char signed /env win32 /Oicf /h "TextSearchCom_i.h" /iid "TextSearchCom_i.c" /proxy "TextSearchCom_p.c" /tlb "Debug\TextSearchCom.tlb" /robust TextSearchCom.idl 
+         Processing .\TextSearchCom.idl
+         TextSearchCom.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+         ocidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+         oleidl.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+         servprov.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+         urlmon.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+         msxml.idl
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+         oaidl.acf
+         Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+         ocidl.acf
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\TextSearchCom.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "..\Cpp11-BlockingQueue\Cpp11-BlockingQueue.cpp" ..\FileSystem\FileSystem.cpp ..\Utilities\Utility.cpp TextSearch.cpp TextSearchCom.cpp
+         TextSearchCom.cpp
+         TextSearch.cpp
+         Utility.cpp
+         FileSystem.cpp
+         Cpp11-BlockingQueue.cpp
+         Generating Code...
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt TextSearchCom_i.c xdlldata.c
+         xdlldata.c
+         TextSearchCom_i.c
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /l"0x0409" /IDebug\ /nologo /fo"Debug\TextSearchCom.res" TextSearchCom.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\TextSearchCom.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Debug\TextSearchCom.res
+         "Debug\Cpp11-BlockingQueue.obj"
+         Debug\FileSystem.obj
+         Debug\Utility.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+         Debug\TextSearch.obj
+         Debug\TextSearchCom.obj
+         Debug\TextSearchCom_i.obj
+         Debug\xdlldata.obj
+            Creating library C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.lib and object C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.exp
+         TextSearchCom.vcxproj -> C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.dll
+       RegisterOutput:
+         regsvr32 /s "C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\TextSearchCom.dll"
+     1>Done Building Project "C:\Users\lenovo\Desktop\TextSearch-Windows\TextSearchCom\TextSearchCom.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.42

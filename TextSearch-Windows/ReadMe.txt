@@ -1,0 +1,1 @@
+Since the Windows COM technology needs to access the register, this project must be run under admininstrator privileges.

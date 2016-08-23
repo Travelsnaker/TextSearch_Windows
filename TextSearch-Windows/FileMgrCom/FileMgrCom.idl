@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////////////
+//  FileMgrCom.idl - IDL for component FileMgr               //
+//                                                           //
+//  Platform:     Lenovo Y470, Core i3, Windows 7 SP1        //
+//  Application:  Demonstration for CSE775 - Distrib. Objs   //
+//  Authors:      Eddon & Eddon, Inside Distributed COM,     //
+//                Microsoft Press, 1998                      //
+//  Modified:     Wei Sun, Computer Engineering,Syracuse Univ//
+//                wsun13@syr.edu                             //
+///////////////////////////////////////////////////////////////
+/*
+*	Component Operation:
+*	====================
+*	Provide interface to search files given a specified root directory and 
+*	one or more patterns.
+*
+*	Public Interface:
+*   ====================
+*	HRESULT SearchFile(BSTR root, SAFEARRAY(BSTR)files); 
+*	HRESULT get(BSTR* filespec);	//Get search results.
+*	HRESULT getNumFiles(LONG* num);  //Get the number of results.
+*	
+*	Required Files
+*	====================
+*	FileMgrCom.idl, Cpp11-BlockingQueue.h, Cpp11-BlockingQueue.cpp, dllmain.h,
+*	dllmain.cpp, FileSystem.h, FileSystem.cpp, Resource.h, stdafx.h, stdafx.cpp,
+*	targetver.h, FileMgr.h, FileMgr.cpp, Utility.h, Utility.cpp, xdlldata.h,
+*	xdlldata.c, TextSearchCom.cpp
+*
+*   Maintenance History:
+*   ===================
+*   Ver 1.0 : 16 Mar 6
+*   - first release	
+*/
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(C97FBB34-48A6-4CEA-B53A-CD9B6C150B9F),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFileMgr : IDispatch{
+	[id(1)] HRESULT SearchFile(BSTR root, SAFEARRAY(BSTR)files);
+	[id(2)] HRESULT get(BSTR* filespec);
+	[id(3)] HRESULT getNumFiles(LONG* num);
+};
+[
+	uuid(C41749BC-0C9E-4556-9A71-EE02F98B99AD),
+	version(1.0),
+]
+library FileMgrComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(BC25C535-C2D2-42F1-A379-734082F7B4B9)		
+	]
+	coclass FileMgr
+	{
+		[default] interface IFileMgr;
+	};
+};
+

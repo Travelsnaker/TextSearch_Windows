@@ -1,0 +1,13 @@
+﻿Build started 2016/8/23 15:46:10.
+     1>Project "C:\Users\lenovo\Desktop\TextSearch-Windows\Utilities\Utilities.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D TEST_UTILITY /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Utility.cpp
+         Utility.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\Utilities.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\Utilities.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\Utilities.lib" /MACHINE:X86 Debug\Utility.obj
+         Utilities.vcxproj -> C:\Users\lenovo\Desktop\TextSearch-Windows\Debug\Utilities.exe
+     1>Done Building Project "C:\Users\lenovo\Desktop\TextSearch-Windows\Utilities\Utilities.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.91
